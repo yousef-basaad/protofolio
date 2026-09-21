@@ -128,7 +128,7 @@ const experienceTextAr: { role: string; company: string; period: string; bullets
     period: "2025 — حتى الآن",
     bullets: [
       "صممت وبنيت تطبيقات متكاملة (AI Fitness Coach، وNova Admin، وHabit Tracker) باستخدام React وNext.js وSupabase.",
-      "طبّقت المصادقة، وأمان مستوى الصفوف (RLS)، وتكاملات الذكاء الاصطناعي، وواجهات ثنائية اللغة بتخطيط RTL.",
+      "طبّقت المصادقة، والأمان على مستوى الصفوف (RLS)، وتكاملات الذكاء الاصطناعي، وواجهات ثنائية اللغة بتخطيط RTL.",
     ],
   },
 ];
@@ -145,7 +145,7 @@ const arEducation = education.map((item) => ({
 // description and skill names) in both locales, so it's left untranslated below.
 const skillGroupTextAr: Record<string, { title: string; description: string }> = {
   frontend: { title: "الواجهة الأمامية", description: "واجهات سريعة وسهلة الوصول وممتعة الاستخدام." },
-  backend: { title: "الواجهة الخلفية", description: "واجهات برمجية ومصادقة وبيانات تنمو مع المنتج." },
+  backend: { title: "الواجهة الخلفية", description: "واجهات برمجية ومصادقة وقواعد بيانات تتوسع مع نمو المنتج." },
 };
 
 const arSkillGroups = skillGroups.map((g) => ({ ...g, ...skillGroupTextAr[g.id] }));
@@ -176,7 +176,7 @@ export const ar: Dictionary = {
   meta: {
     title: `${site.name} — مطوّر واجهات أمامية`,
     description:
-      "مطوّر واجهات أمامية متخصص في React وNext.js وTypeScript، لديه خبرة في بناء تطبيقات متكاملة من التصميم إلى الإطلاق باستخدام Tailwind CSS وSupabase.",
+      "مطوّر واجهات أمامية متخصص في React وNext.js وTypeScript، يمتلك خبرة في بناء تطبيقات متكاملة من التصميم وحتى الإطلاق باستخدام Tailwind CSS وSupabase.",
   },
   common: {
     location: "السعودية",
@@ -205,7 +205,7 @@ export const ar: Dictionary = {
     heroWords: ["قابلة للتوسع", "سريعة", "سهلة الوصول", "حديثة"],
     role: "مطوّر واجهات أمامية",
     descriptionPrefix: "أبني تطبيقات ويب ",
-    descriptionSuffix: " باستخدام React وNext.js وTypeScript، مصممة باستخدام Tailwind CSS ومدعومة من Supabase.",
+    descriptionSuffix: " بتقنيات React وNext.js وTypeScript، مع تصميم بـ Tailwind CSS ودعم من Supabase.",
     ctaWork: "استعرض أعمالي",
     ctaContact: "تواصل معي",
     ctaDownloadCV: "تحميل السيرة الذاتية",
@@ -223,7 +223,7 @@ export const ar: Dictionary = {
     intro:
       "أنا مهندس علوم حاسب أبني منتجات ويب من الألف إلى الياء — من الواجهات النظيفة والسهلة الوصول إلى واجهات البرمجة (APIs) ونماذج البيانات خلفها.",
     paragraphs: [
-      "خلفيتي الهندسية تمنحني أساسًا قويًا في هياكل البيانات والخوارزميات وتصميم الأنظمة، وأستخدم ذلك في بناء تطبيقات ويب سريعة وسهلة الصيانة.",
+      "منحتني خلفيتي الهندسية أساسًا قويًا في هياكل البيانات والخوارزميات وتصميم الأنظمة، وأوظّف ذلك في بناء تطبيقات ويب سريعة وسهلة الصيانة.",
       "أعمل عبر كامل الحزمة التقنية — React وNext.js في الواجهة الأمامية، وSupabase وPostgreSQL في الواجهة الخلفية — ويسعدني حقًا دمج أدوات الذكاء الاصطناعي الحديثة في منتجات فعلية.",
     ],
     educationBadge: "بكالوريوس هندسة الحاسبات",
@@ -233,7 +233,7 @@ export const ar: Dictionary = {
       { title: "إتقان الواجهات الأمامية", text: "واجهات دقيقة التفاصيل ومتجاوبة وسهلة الوصول باستخدام React وNext.js وTypeScript وTailwind.", icon: "LayoutTemplate" },
       { title: "الخلفية والبيانات", text: "واجهات REST API والمصادقة والبيانات العلائقية باستخدام Supabase وPostgreSQL.", icon: "Database" },
       { title: "حل المشكلات", text: "أحوّل المتطلبات الغامضة إلى أجزاء واضحة وقابلة للاختبار، وأطلقها بشكل تدريجي.", icon: "Puzzle" },
-      { title: "تطبيقات ويب حديثة", text: "تطبيقات جاهزة للإنتاج مبنية منذ اليوم الأول على الأداء وتحسين محركات البحث وبنية برمجية نظيفة.", icon: "Rocket" },
+      { title: "تطبيقات ويب حديثة", text: "تطبيقات جاهزة للإنتاج، مبنية من الأساس على الأداء وتحسين محركات البحث (SEO) وبنية برمجية نظيفة.", icon: "Rocket" },
       { title: "شغوف بالذكاء الاصطناعي", text: "أبني باستخدام واجهات نماذج اللغة الكبيرة (LLM) وسير عمل مدعوم بالذكاء الاصطناعي لإطلاق ميزات أذكى وأسرع.", icon: "Sparkles" },
     ],
   },
