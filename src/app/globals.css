@@ -83,6 +83,21 @@ body {
   font-family: var(--font-arabic);
 }
 
+/* Arabic script is cursive — glyphs must stay connected. Any non-zero
+   letter-spacing (even Tailwind's "wide" tracking utilities used for
+   uppercase eyebrow labels / mono badges) forces the browser to render
+   isolated, disconnected letterforms instead of joined ones, which reads
+   as garbled. The mono font stack also has no Arabic glyphs, so it falls
+   back to a mismatched system font. Reset both wherever they land inside
+   RTL content. */
+[dir="rtl"] .font-mono {
+  font-family: var(--font-arabic);
+}
+
+[dir="rtl"] :is(.tracking-wider, .tracking-widest, .tracking-\[0\.2em\]) {
+  letter-spacing: normal;
+}
+
 ::selection {
   background: var(--accent);
   color: #fff;
