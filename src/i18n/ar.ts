@@ -172,6 +172,7 @@ export const ar: Dictionary = {
       "مطوّر واجهات أمامية متخصص في React وNext.js وTypeScript، بنيت تطبيقات متكاملة من التصميم إلى الإطلاق باستخدام Tailwind CSS وSupabase.",
   },
   common: {
+    name: "يوسف مبارك",
     location: "السعودية",
     languageSwitcherLabel: "تغيير اللغة",
     englishLabel: "English",

@@ -14,6 +14,7 @@ export const en: Dictionary = {
     description: site.description,
   },
   common: {
+    name: site.name,
     location: site.location,
     languageSwitcherLabel: "Change language",
     englishLabel: "English",

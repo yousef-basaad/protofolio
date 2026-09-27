@@ -60,7 +60,7 @@ export function Hero() {
           {...fadeUp(0.2)}
           className="text-balance text-[clamp(2.75rem,8vw,6.5rem)] font-semibold leading-[0.98] tracking-[-0.03em]"
         >
-          {site.name}
+          {dict.common.name}
         </motion.h1>
 
         <motion.p

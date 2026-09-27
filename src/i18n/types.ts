@@ -14,6 +14,8 @@ export type Dictionary = {
     description: string;
   };
   common: {
+    /** Displayed personal name (localized). */
+    name: string;
     /** Displayed location (e.g. "Saudi Arabia"). */
     location: string;
     languageSwitcherLabel: string;

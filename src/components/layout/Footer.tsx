@@ -11,7 +11,7 @@ export function Footer() {
     <footer className="border-t border-line">
       <div className="container-x flex flex-col gap-8 py-12 md:flex-row md:items-end md:justify-between">
         <div>
-          <p className="text-lg font-semibold tracking-tight">{site.name}</p>
+          <p className="text-lg font-semibold tracking-tight">{dict.common.name}</p>
           <p className="mt-1 text-sm text-fg-muted">{dict.hero.role}</p>
           <div className="mt-5 flex items-center gap-2">
             <FooterLink href={site.links.github} label={dict.contact.channelLabels.github} external>

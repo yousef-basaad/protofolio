@@ -96,7 +96,7 @@ export function Navbar() {
             <span className="grid h-7 w-7 place-items-center rounded-lg bg-fg text-bg font-mono text-xs">
               {site.firstName[0]}
             </span>
-            <span className="hidden sm:inline">{site.name}</span>
+            <span className="hidden sm:inline">{dict.common.name}</span>
           </Link>
 
           <ul className="hidden items-center gap-1 md:flex">
