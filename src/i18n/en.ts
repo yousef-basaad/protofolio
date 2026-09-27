@@ -43,7 +43,7 @@ export const en: Dictionary = {
   },
   about: {
     eyebrow: "About me",
-    title: "Engineer by training, builder by habit.",
+    title: "Frontend Developer",
     intro: about.intro,
     paragraphs: about.paragraphs,
     educationBadge: "B.E. Computer Science & Engineering",

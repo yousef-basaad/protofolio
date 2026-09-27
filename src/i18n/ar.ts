@@ -212,7 +212,7 @@ export const ar: Dictionary = {
   },
   about: {
     eyebrow: "نبذة عني",
-    title: "مطوّر شغوف",
+    title: "مطوّر واجهات أمامية",
     intro:
       "أنا Front-End Developer، أبني واجهات ويب نظيفة وسريعة وسهلة الاستخدام باستخدام React وNext.js وTypeScript، وأربطها بواجهات برمجية وقواعد بيانات عند الحاجة.",
     paragraphs: [
