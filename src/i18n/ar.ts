@@ -105,7 +105,7 @@ const projectTextAr: Record<
 
 const arProjects = projects.map((p) => ({ ...p, ...projectTextAr[p.slug] }));
 
-const experienceTextAr: { role: string; company: string; period: string; bullets: string[] }[] = [
+const experienceTextAr: { role: string; company?: string; period: string; bullets: string[] }[] = [
   {
     role: "متدرب تطوير واجهات أمامية",
     company: "JISR HR",
@@ -118,7 +118,6 @@ const experienceTextAr: { role: string; company: string; period: string; bullets
   },
   {
     role: "مشاريع شخصية",
-    company: "عمل مستقل",
     period: "2025 — حتى الآن",
     bullets: [
       "صممت وبنيت تطبيقات ويب متكاملة باستخدام React وNext.js وSupabase، مع التركيز على بناء واجهات عملية وقابلة للتوسع.",

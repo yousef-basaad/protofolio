@@ -1,6 +1,7 @@
 "use client";
 
 import { Briefcase, FolderGit2, GraduationCap } from "lucide-react";
+import Image from "next/image";
 import { useLanguage } from "@/i18n";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionHeading } from "@/components/ui/SectionHeading";
@@ -40,16 +41,27 @@ export function Experience() {
                     </h3>
                     <span className="font-mono text-xs text-fg-subtle">{item.period}</span>
                   </div>
-                  <p className="mt-0.5 text-sm text-fg-muted">
-                    {item.companyUrl ? (
-                      <a href={item.companyUrl} target="_blank" rel="noopener noreferrer" className="link-underline hover:text-fg">
-                        {item.company}
-                      </a>
-                    ) : (
-                      item.company
-                    )}
-                    {item.location && <span className="text-fg-subtle"> · {item.location}</span>}
-                  </p>
+                  {(item.logo || item.company) && (
+                    <div className="mt-1.5 flex items-center gap-3">
+                      {item.logo && (
+                        <span className="relative h-12 w-12 shrink-0 overflow-hidden rounded-lg border border-line bg-bg sm:h-14 sm:w-14">
+                          <Image src={item.logo} alt={`${item.company} logo`} fill sizes="56px" className="object-contain p-1.5" />
+                        </span>
+                      )}
+                      {item.company && (
+                        <p className="text-sm text-fg-muted">
+                          {item.companyUrl ? (
+                            <a href={item.companyUrl} target="_blank" rel="noopener noreferrer" className="link-underline hover:text-fg">
+                              {item.company}
+                            </a>
+                          ) : (
+                            item.company
+                          )}
+                          {item.location && <span className="text-fg-subtle"> · {item.location}</span>}
+                        </p>
+                      )}
+                    </div>
+                  )}
                   <ul className="mt-4 space-y-2 text-sm leading-relaxed text-fg-muted">
                     {item.bullets.map((b) => (
                       <li key={b} className="flex gap-2">

@@ -108,8 +108,10 @@ export const skillGroups: SkillGroup[] = [
 /* ---------- Experience ---------- */
 export type ExperienceItem = {
   role: string;
-  company: string;
+  company?: string;
   companyUrl?: string;
+  /** Path under /public to the company's logo (e.g. "/logos/jisr-hr.png"). */
+  logo?: string;
   period: string;
   location?: string;
   type: "work" | "training" | "project";
@@ -122,6 +124,7 @@ export const experience: ExperienceItem[] = [
     role: "Front-End Developer Intern",
     company: "JISR HR",
     companyUrl: "",
+    logo: "/logos/jisr-hr.png",
     period: "Apr 2026 — Jul 2026",
     type: "training",
     bullets: [
@@ -132,8 +135,7 @@ export const experience: ExperienceItem[] = [
     tech: ["React", "JavaScript", "Component Architecture"],
   },
   {
-    role: "Independent Projects",
-    company: "Self-directed",
+    role: "Freelancer Projects",
     period: "2025 — Present",
     type: "project",
     bullets: [
