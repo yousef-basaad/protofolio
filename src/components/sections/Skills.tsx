@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 
 const marquee = [
   "React", "Next.js", "TypeScript", "Tailwind CSS", "Redux Toolkit", "PostgreSQL", "Supabase",
-  "REST APIs", "React Router", "Git", "Vite", "Gemini API", "Responsive Design", "Recharts",
+  "REST APIs", "React Router", "Git", "Vite", "Responsive Design", "Recharts",
 ];
 
 export function Skills() {

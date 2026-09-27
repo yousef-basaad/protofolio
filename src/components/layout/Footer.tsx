@@ -7,7 +7,6 @@ import { useLanguage } from "@/i18n";
 
 export function Footer() {
   const { dict } = useLanguage();
-  const year = new Date().getFullYear();
   return (
     <footer className="border-t border-line">
       <div className="container-x flex flex-col gap-8 py-12 md:flex-row md:items-end md:justify-between">
@@ -38,9 +37,6 @@ export function Footer() {
 
       <div className="border-t border-line">
         <div className="container-x flex flex-col items-start justify-between gap-3 py-5 text-xs text-fg-subtle sm:flex-row sm:items-center">
-          <p>
-            © {year} {site.name}. {dict.footer.rightsReserved}
-          </p>
           <div className="flex items-center gap-4">
             <p className="font-mono">{dict.footer.builtWith}</p>
             <a

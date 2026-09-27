@@ -40,8 +40,8 @@ export const about = {
       icon: "Rocket",
     },
     {
-      title: "AI-curious",
-      text: "Building with LLM APIs and AI-assisted workflows to ship smarter features, faster.",
+      title: "AI Tools",
+      text: "I use AI tools as part of my workflow to build useful solutions and features.",
       icon: "Sparkles",
     },
   ],
@@ -89,8 +89,6 @@ export const skillGroups: SkillGroup[] = [
       { name: "Supabase Edge Functions" },
       { name: "Row Level Security" },
       { name: "REST APIs" },
-      { name: "Gemini API" },
-      { name: "OpenFoodFacts" },
     ],
   },
   {
@@ -139,10 +137,10 @@ export const experience: ExperienceItem[] = [
     period: "2025 — Present",
     type: "project",
     bullets: [
-      "Designed and built full-stack applications (AI Fitness Coach, Nova Admin, Habit Tracker) with React, Next.js and Supabase.",
+      "Designed and built full-stack web applications with React, Next.js and Supabase, focused on practical, scalable interfaces.",
       "Implemented authentication, row-level security, AI integrations and bilingual RTL interfaces.",
     ],
-    tech: ["Next.js", "TypeScript", "Supabase", "Gemini API"],
+    tech: ["Next.js", "TypeScript", "Supabase"],
   },
 ];
 

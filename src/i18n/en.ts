@@ -33,8 +33,7 @@ export const en: Dictionary = {
     heroWords: ["scalable", "fast", "accessible", "modern"],
     role: site.role,
     descriptionPrefix: "I build ",
-    descriptionSuffix:
-      " web applications with React, Next.js and TypeScript — styled with Tailwind CSS and backed by Supabase.",
+    descriptionSuffix: " web applications, with attention to detail, performance and user experience.",
     ctaWork: "View My Work",
     ctaContact: "Contact Me",
     ctaDownloadCV: "Download CV",
@@ -119,7 +118,7 @@ export const en: Dictionary = {
     },
   },
   footer: {
-    builtWith: "Built with Next.js · TypeScript · Tailwind",
+    builtWith: "© 2026 Yousef Mubarak · All rights reserved.",
     rightsReserved: "All rights reserved.",
   },
 };

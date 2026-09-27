@@ -50,12 +50,12 @@ export const projects: Project[] = [
     problem:
       "Generic fitness apps don't adapt to the individual — users get static plans and have to log nutrition by hand.",
     solution:
-      "A full-stack platform that generates personalised plans and food recognition with the Gemini API, backed by secure, per-user data in Supabase.",
+      "A full-stack platform that generates personalised plans and food recognition with AI, backed by secure, per-user data in Supabase.",
     contribution:
-      "Designed and built the application end-to-end: the React/TypeScript frontend, the Supabase backend (auth, RLS, database, Edge Functions), and the Gemini + OpenFoodFacts integrations.",
+      "Designed and built the application end-to-end: the React/TypeScript frontend, the Supabase backend (auth, RLS, database, Edge Functions), and the AI integrations.",
     features: [
-      "Personalised workout & nutrition plans generated with Gemini",
-      "AI food-image recognition with lookup via OpenFoodFacts",
+      "Personalised workout & nutrition plans generated with AI",
+      "AI food-image recognition",
       "Conversational AI fitness coach",
       "Progress tracking with Recharts dashboards",
       "Secure per-user data with Supabase Auth + Row Level Security",
@@ -69,8 +69,6 @@ export const projects: Project[] = [
       "Supabase Auth",
       "Row Level Security",
       "Supabase Edge Functions",
-      "Gemini API",
-      "OpenFoodFacts API",
       "Recharts",
     ],
     demo: "https://ai-fitness-coach-coral.vercel.app/",
