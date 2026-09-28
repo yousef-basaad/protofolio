@@ -11,17 +11,26 @@ type State = "idle" | "sending" | "sent" | "error";
 const field =
   "w-full rounded-xl border border-line bg-bg/60 px-4 py-3 text-sm text-fg placeholder:text-fg-subtle transition-colors focus:border-accent focus:outline-none";
 
+const isValidEmail = (value: string) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
+
 export function ContactForm() {
   const { dict } = useLanguage();
   const [state, setState] = useState<State>("idle");
 
   async function onSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
+    if (state === "sending") return; // guard against double-submit (e.g. Enter key spam)
+
     const form = e.currentTarget;
     const data = new FormData(form);
-    const name = String(data.get("name") ?? "");
-    const email = String(data.get("email") ?? "");
-    const message = String(data.get("message") ?? "");
+    const name = String(data.get("name") ?? "").trim();
+    const email = String(data.get("email") ?? "").trim();
+    const message = String(data.get("message") ?? "").trim();
+
+    if (!name || !email || !message || !isValidEmail(email)) {
+      setState("error");
+      return;
+    }
 
     // No endpoint configured → open the visitor's mail client with a prefilled message.
     if (!site.formEndpoint) {

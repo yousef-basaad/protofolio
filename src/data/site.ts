@@ -27,7 +27,7 @@ export const site = {
 
   /** Contact form — paste a Formspree / Getform / Web3Forms endpoint here.
    *  Leave empty to fall back to opening the user's email client. */
-  formEndpoint: "", // e.g. "https://formspree.io/f/xxxxxxx"
+  formEndpoint: "https://formspree.io/f/xppwonzy",
 
   nav: [
     { label: "About", href: "#about" },
