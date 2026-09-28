@@ -38,7 +38,7 @@ export function Footer() {
       <div className="border-t border-line">
         <div className="container-x flex flex-col items-start justify-between gap-3 py-5 text-xs text-fg-subtle sm:flex-row sm:items-center">
           <div className="flex items-center gap-4">
-            <p className="font-mono">{dict.footer.builtWith}</p>
+            <p className="label-mono">{dict.footer.builtWith}</p>
             <a
               href="#top"
               aria-label={dict.common.backToTopLabel}

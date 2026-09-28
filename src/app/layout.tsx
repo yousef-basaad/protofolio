@@ -60,6 +60,17 @@ const jsonLd = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" dir="ltr" className="dark" suppressHydrationWarning>
+      <head>
+        {/* Apply a saved Arabic preference before paint, the same way next-themes
+            avoids a flash of the wrong theme — keeps the static-export architecture
+            intact while giving returning Arabic visitors correct lang/dir immediately. */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html:
+              'try{if(localStorage.getItem("locale")==="ar"){document.documentElement.lang="ar";document.documentElement.dir="rtl";}}catch(e){}',
+          }}
+        />
+      </head>
       <body className={`${GeistSans.variable} ${GeistMono.variable} ${cairo.variable} antialiased`}>
         <ThemeProvider>
           <LanguageProvider>

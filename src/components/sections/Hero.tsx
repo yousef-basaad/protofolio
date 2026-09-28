@@ -53,7 +53,7 @@ export function Hero() {
               {dict.hero.availableBadge}
             </span>
           )}
-          <span className="hidden font-mono text-xs text-fg-subtle sm:inline">{dict.common.location}</span>
+          <span className="hidden label-mono text-xs text-fg-subtle sm:inline">{dict.common.location}</span>
         </motion.div>
 
         <motion.h1
@@ -134,7 +134,7 @@ export function Hero() {
         transition={{ delay: 1.4, duration: 1 }}
         className="absolute bottom-6 left-1/2 hidden -translate-x-1/2 flex-col items-center gap-2 text-xs text-fg-subtle md:flex"
       >
-        <span className="font-mono">{dict.hero.scrollLabel}</span>
+        <span className="label-mono">{dict.hero.scrollLabel}</span>
         <span className="relative h-10 w-px overflow-hidden bg-line-strong">
           <motion.span
             className="absolute inset-x-0 top-0 h-1/2 bg-fg"

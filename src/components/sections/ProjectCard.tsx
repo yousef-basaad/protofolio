@@ -146,7 +146,7 @@ function Status({ status }: { status?: Project["status"] }) {
   const { dict } = useLanguage();
   if (!status) return null;
   return (
-    <span className="inline-flex items-center gap-1.5 rounded-full border border-line bg-card px-2.5 py-1 font-mono text-[11px] uppercase tracking-wider text-fg-muted backdrop-blur">
+    <span className="inline-flex items-center gap-1.5 rounded-full border border-line bg-card px-2.5 py-1 label-mono text-[11px] uppercase tracking-wider text-fg-muted backdrop-blur">
       <span
         className={cn(
           "h-1.5 w-1.5 rounded-full",
@@ -199,18 +199,18 @@ export function ProjectCard({ project, index }: { project: Project; index: numbe
           <p className="mt-0.5 text-sm text-fg-muted">{project.tagline}</p>
           <p className="text-pretty mt-3 text-sm leading-relaxed text-fg-muted">{project.description}</p>
           <p className="mt-3 text-sm">
-            <span className="font-mono text-[11px] uppercase tracking-wider text-fg-subtle">{dict.projects.theProblem} · </span>
+            <span className="label-mono text-[11px] uppercase tracking-wider text-fg-subtle">{dict.projects.theProblem} · </span>
             <span className="text-fg-muted">{project.problem}</span>
           </p>
           {project.solution && (
             <p className="mt-1.5 text-sm">
-              <span className="font-mono text-[11px] uppercase tracking-wider text-fg-subtle">{dict.projects.theSolution} · </span>
+              <span className="label-mono text-[11px] uppercase tracking-wider text-fg-subtle">{dict.projects.theSolution} · </span>
               <span className="text-fg-muted">{project.solution}</span>
             </p>
           )}
           {project.contribution && (
             <p className="mt-1.5 text-sm">
-              <span className="font-mono text-[11px] uppercase tracking-wider text-fg-subtle">{dict.projects.myContribution} · </span>
+              <span className="label-mono text-[11px] uppercase tracking-wider text-fg-subtle">{dict.projects.myContribution} · </span>
               <span className="text-fg-muted">{project.contribution}</span>
             </p>
           )}

@@ -83,6 +83,35 @@ body {
   font-family: var(--font-arabic);
 }
 
+/* ---------------------------------------------------------------------------
+   RTL / Arabic typography overrides
+   Geist Mono (used for small UI labels like eyebrows and status pills) has no
+   Arabic glyph coverage, and Latin-oriented tight/wide letter-spacing hurts
+   legibility on Arabic's connected script. These overrides only ever match
+   under [dir="rtl"], so the LTR/English experience is completely unaffected.
+   --------------------------------------------------------------------------- */
+[dir="rtl"] .label-mono {
+  font-family: var(--font-arabic);
+}
+
+[dir="rtl"] .tracking-tight,
+[dir="rtl"] .tracking-tighter,
+[dir="rtl"] .tracking-wider,
+[dir="rtl"] .tracking-widest,
+[dir="rtl"] .tracking-\[-0\.03em\],
+[dir="rtl"] .tracking-\[0\.2em\] {
+  --tw-tracking: normal;
+  letter-spacing: normal;
+}
+
+/* Mirror the hover-underline wipe direction to match Arabic reading direction. */
+[dir="rtl"] .link-underline::after {
+  transform-origin: left;
+}
+[dir="rtl"] .link-underline:hover::after {
+  transform-origin: right;
+}
+
 ::selection {
   background: var(--accent);
   color: #fff;
@@ -116,6 +145,14 @@ body {
 
 @utility text-balance { text-wrap: balance; }
 @utility text-pretty { text-wrap: pretty; }
+
+/* Small mono-styled UI labels (eyebrows, badges, status pills) that also hold
+   translated Arabic text. Behaves exactly like font-mono under LTR; the
+   [dir="rtl"] override above switches it to the Arabic font stack. Genuinely
+   Latin-only content (tech tags, counters) should keep using plain font-mono. */
+@utility label-mono {
+  font-family: var(--font-mono);
+}
 
 /* subtle dotted grid background */
 @utility bg-grid {

@@ -5,14 +5,14 @@ type Props = {
   eyebrow: string;
   title: string;
   description?: string;
-  align?: "left" | "center";
+  align?: "start" | "center";
   className?: string;
 };
 
-export function SectionHeading({ eyebrow, title, description, align = "left", className }: Props) {
+export function SectionHeading({ eyebrow, title, description, align = "start", className }: Props) {
   return (
     <Reveal className={cn("mb-12 md:mb-16", align === "center" && "text-center mx-auto", className)}>
-      <p className="font-mono text-xs uppercase tracking-[0.2em] text-accent mb-3">
+      <p className="label-mono text-xs uppercase tracking-[0.2em] text-accent mb-3">
         <span aria-hidden className="inline-block w-6 h-px bg-accent align-middle me-3" />
         {eyebrow}
       </p>

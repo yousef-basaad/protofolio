@@ -121,7 +121,7 @@ const experienceTextAr: { role: string; company?: string; period: string; bullet
     period: "2025 — حتى الآن",
     bullets: [
       "صممت وبنيت تطبيقات ويب متكاملة باستخدام React وNext.js وSupabase، مع التركيز على بناء واجهات عملية وقابلة للتوسع.",
-      "طبّقت المصادقة، وأمان مستوى الصفوف (RLS)، وتكاملات الذكاء الاصطناعي، وواجهات ثنائية اللغة بتخطيط RTL.",
+      "طبّقت المصادقة، وأمان على مستوى الصفوف (RLS)، وتكاملات الذكاء الاصطناعي، وواجهات ثنائية اللغة بتخطيط RTL.",
     ],
   },
 ];
@@ -130,7 +130,7 @@ const arExperience = experience.map((item, i) => ({ ...item, ...experienceTextAr
 
 const arEducation = education.map((item) => ({
   ...item,
-  degree: "بكالوريوس في هندسة علوم الحاسب",
+  degree: "بكالوريوس هندسة علوم الحاسب",
   location: "بنغالورو، الهند",
 }));
 
@@ -213,7 +213,7 @@ export const ar: Dictionary = {
   },
   about: {
     eyebrow: "نبذة عني",
-    title: "مطوّر واجهات أمامية",
+    title: "أبني واجهات ويب نظيفة وسريعة.",
     intro:
       "أنا Front-End Developer، أبني واجهات ويب نظيفة وسريعة وسهلة الاستخدام باستخدام React وNext.js وTypeScript، وأربطها بواجهات برمجية وقواعد بيانات عند الحاجة.",
     paragraphs: [
@@ -223,9 +223,9 @@ export const ar: Dictionary = {
     educationBadge: "بكالوريوس هندسة علوم الحاسب",
     languagesBadge: "العربية · الإنجليزية",
     highlights: [
-      { title: "خلفية هندسة علوم الحاسب", text: "بكالوريوس هندسة علوم الحاسب — أساس قوي في الخوارزميات وقواعد البيانات والأنظمة.", icon: "GraduationCap" },
+      { title: "الخلفية الأكاديمية", text: "بكالوريوس هندسة علوم الحاسب — أساس قوي في الخوارزميات وقواعد البيانات والأنظمة.", icon: "GraduationCap" },
       { title: "واجهات دقيقة ومتجاوبة", text: "أبني واجهات متجاوبة وسهلة الوصول ومطابقة للتصميم، باستخدام React وNext.js وTypeScript وTailwind.", icon: "LayoutTemplate" },
-      { title: "التكامل مع الباك إند", text: "أربط واجهاتي بـ REST APIs وأنظمة مصادقة وقواعد بيانات علائقية باستخدام Supabase وPostgreSQL.", icon: "Database" },
+      { title: "التكامل مع الواجهة الخلفية", text: "أربط واجهاتي بـ REST APIs وأنظمة مصادقة وقواعد بيانات علائقية باستخدام Supabase وPostgreSQL.", icon: "Database" },
       { title: "حل المشكلات", text: "أحوّل المتطلبات الغامضة إلى أجزاء واضحة وقابلة للاختبار، وأطلقها تدريجيًا.", icon: "Puzzle" },
       { title: "تطبيقات ويب حديثة", text: "أبني تطبيقات جاهزة للإنتاج، مهتم بالأداء وتحسين محركات البحث من أول يوم.", icon: "Rocket" },
       { title: "أدوات الذكاء الاصطناعي", text: "أستخدم أدوات الذكاء الاصطناعي كجزء من عملي لتطوير حلول وميزات مفيدة.", icon: "Sparkles" },

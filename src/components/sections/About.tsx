@@ -22,7 +22,7 @@ export function About() {
                 <p className="text-pretty mt-5 leading-relaxed text-fg-muted">{p}</p>
               </Reveal>
             ))}
-            <Reveal delay={0.3} className="mt-8 flex flex-wrap gap-x-6 gap-y-2 font-mono text-xs text-fg-subtle">
+            <Reveal delay={0.3} className="mt-8 flex flex-wrap gap-x-6 gap-y-2 label-mono text-xs text-fg-subtle">
               <span>📍 {dict.common.location}</span>
               <span>🎓 {dict.about.educationBadge}</span>
               <span>💬 {dict.about.languagesBadge}</span>

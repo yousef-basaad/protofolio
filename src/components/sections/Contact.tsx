@@ -33,7 +33,7 @@ export function Contact() {
           <div className="relative grid gap-12 p-6 sm:p-10 lg:grid-cols-[1fr_1.1fr] lg:gap-16 lg:p-14">
             <div>
               <Reveal>
-                <p className="font-mono text-xs uppercase tracking-[0.2em] text-accent">{dict.contact.eyebrow}</p>
+                <p className="label-mono text-xs uppercase tracking-[0.2em] text-accent">{dict.contact.eyebrow}</p>
                 <h2 className="text-balance mt-3 text-4xl font-semibold leading-[1.05] tracking-tight sm:text-5xl">
                   {dict.contact.heading1}
                   <br />

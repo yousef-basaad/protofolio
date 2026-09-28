@@ -39,7 +39,7 @@ export function Experience() {
                     <h3 className={cn("text-lg font-semibold tracking-tight", placeholder && "text-fg-subtle")}>
                       {item.role}
                     </h3>
-                    <span className="font-mono text-xs text-fg-subtle">{item.period}</span>
+                    <span className="label-mono text-xs text-fg-subtle">{item.period}</span>
                   </div>
                   {(item.logo || item.company) && (
                     <div className="mt-1.5 flex items-center gap-3">
